@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWAPPE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-style">
+
+  <div class="profile-wrap">
+    <div class="wrapper">
+        <div class="breadcrumbs hide-mobile">
+            <a href="#index.html">
+                Главная
+                <img src="img/arr-r.svg" alt="arrow">
+            </a>
+            <span>Избранное</span>
+        </div>
+        <div class="top-mob-line">
+            <a href="profile-mobila.html" class="back">
+                <img src="img/back-icon.svg" alt="">
+            </a>
+            <b>Избранное</b>
+        </div>
+        <div class="info">
+            <div class="profile-menu-wrap">
+                <div class="top">
+                    <div class="img-wrap">
+                        <img src="img/avatar.png" alt="profile-avatar">
+                        <div class="premium">
+                            <img src="img/premium-icon.svg" alt="premium-icon">
+                            <span>Премиум</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="name">Название Компании</span>
+                <div class="stars">
+                    <div class="stars-images">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star-dubl.svg" alt="star">
+                    </div>
+                    <span class="num">4.5</span>
+                </div>
+                <ul class="profile-menu">
+                    <li>
+                        <a href="profile.html">
+                            <span class="icon"></span>
+                            <span class="text">Профиль</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="offers.html">
+                            <span class="icon"></span>
+                            <span class="text">Мои предложения</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transactions.html">
+                            <span class="icon"></span>
+                            <span class="text">Cделки</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="favorite.html">
+                            <span class="icon"></span>
+                            <span class="text">Избранное</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="reviews.html">
+                            <span class="icon"></span>
+                            <span class="text">Отзывы</span>
+                            <span class="style">+9</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="tarrifs-and-bonuses.html">
+                            <img src="img/subscription.svg" alt="subscription">
+                            <span class="green">Тариф и бонусы</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="close">
+                    <img src="img/close-Icon.svg" alt="close-Icon">
+                    Выйти
+                </a>
+                <a href="#" class="delete">
+                    <img src="img/delete-Icon.svg" alt="delete-Icon">
+                    Удалить профиль
+                </a>
+            </div>
+            <div class="profile favorite-account">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="switchTab(0)">Компании</button>
+                    <button class="tab-button" onclick="switchTab(1)">Предложения</button>
+                  </div>
+                  <div class="tab-content-wrap">
+                    <div class="tab-content active">
+                        <div class="favorite-items">
+                            <div class="favorite-item">
+                                <div class="img">
+                                    <img src="img/fav-avatar.png" alt="">
+                                </div>
+                                <div class="favorite open"></div>
+                                <div class="name-wrap">
+                                    <b>Название Компании</b>
+                                    <span>
+                                        4.3
+                                        <img src="img/star-small.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="texts">
+                                    <div class="text">
+                                        <span>Город</span>
+                                        <b>Москва и МО</b>
+                                    </div>
+                                    <div class="text">
+                                        <span>Бартерная стоимость</span>
+                                        <b>₽ 30 000</b>
+                                    </div>
+                                </div>
+                                <div class="tags">
+                                    <a href="#" class="tag">Кейтеринг</a>
+                                    <a href="#" class="tag">Доставка</a>
+                                </div>
+                            </div>
+                            <div class="favorite-item">
+                                <div class="img">
+                                    <img src="img/fav-avatar.png" alt="">
+                                </div>
+                                <div class="favorite open"></div>
+                                <div class="name-wrap">
+                                    <b>Название Компании</b>
+                                    <span>
+                                        4.3
+                                        <img src="img/star-small.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="texts">
+                                    <div class="text">
+                                        <span>Город</span>
+                                        <b>Москва и МО</b>
+                                    </div>
+                                    <div class="text">
+                                        <span>Бартерная стоимость</span>
+                                        <b>₽ 30 000</b>
+                                    </div>
+                                </div>
+                                <div class="tags">
+                                    <a href="#" class="tag">Кейтеринг</a>
+                                    <a href="#" class="tag">Доставка</a>
+                                </div>
+                            </div>
+                            <div class="favorite-item">
+                                <div class="img">
+                                    <img src="img/fav-avatar.png" alt="">
+                                </div>
+                                <div class="favorite open"></div>
+                                <div class="name-wrap">
+                                    <b>Название Компании</b>
+                                    <span>
+                                        4.3
+                                        <img src="img/star-small.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="texts">
+                                    <div class="text">
+                                        <span>Город</span>
+                                        <b>Москва и МО</b>
+                                    </div>
+                                    <div class="text">
+                                        <span>Бартерная стоимость</span>
+                                        <b>₽ 30 000</b>
+                                    </div>
+                                </div>
+                                <div class="tags">
+                                    <a href="#" class="tag">Кейтеринг</a>
+                                    <a href="#" class="tag">Доставка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="offers-items">
+                            <div class="offer-item">
+                                <div class="img-wrap">
+                                    <a href="#" class="img">
+                                        <img src="img/offers-img2.png" alt="">
+                                    </a>
+                                    <div class="favorite open"></div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Кейтеринг для мероприятия</span>
+                                    <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                                </div>
+                            </div>
+                            <div class="offer-item">
+                                <div class="img-wrap">
+                                    <a href="#" class="img">
+                                        <img src="img/offers-img1.png" alt="">
+                                    </a>
+                                    <div class="favorite open"></div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Кейтеринг для мероприятия</span>
+                                    <b>4.3 <img src="img/star-small.svg" alt=""></b>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="info">
+        <a href="index.html" class="footer-logo">
+          <img src="img/footer-logo.svg" alt="footer-logo">
+        </a>
+        <div class="menu-wrap">
+          <h4>Разделы</h4>
+          <a href="#">Стать ВИП</a>
+          <a href="#">Сделки</a>
+          <a href="#">Избранное</a>
+          <a href="#">Чат</a>
+        </div>
+        <div class="menu-wrap">
+          <h4>О Свопи</h4>
+          <a href="#">О компании</a>
+          <a href="#">Частые вопросы</a>
+          <a href="#">Поддержка</a>
+          <a href="#">Solutions</a>
+        </div>
+        <div class="menu-wrap">
+          <h4>Положения и условия</h4>
+          <a href="#">Конфиденциальность</a>
+          <a href="#">Условия</a>
+        </div>
+      </div>
+      <p class="copyright">
+        Swappe - платформа для бартерного обмена и коллабораций. 
+        Условия пользования. Политика конфиденциальности. Оформляя 
+        подписку на Swappe, вы принимаете оферту. &copy; 2024 Свопи. 
+         Все права защищены.
+      </p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
+

@@ -43,6 +43,7 @@ function switchTab(index) {
       }
     }
   }
+  
 
   $(".drop-menu-main").on("click", function(){
     $(".menu-wrap-main").addClass("open");
@@ -53,3 +54,16 @@ function switchTab(index) {
     $(".menu-wrap-main").removeClass("open");
     $("html, body").removeClass("overflow");
   })
+
+  $(".favorite").on("click", function(){
+    $(this).toggleClass("open");
+  })
+
+  function copyToClipboard() {
+    const linkText = document.getElementById('refLink').innerText;
+    navigator.clipboard.writeText(linkText).then(() => {
+        alert('Ссылка скопирована!');
+    }).catch(err => {
+        console.error('Ошибка при копировании: ', err);
+    });
+}
