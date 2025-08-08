@@ -48,23 +48,23 @@
     </div> 
     
     <div class="wrapper">
-        <div class="mobile-icons">
-            <a href="#" class="icon">
-                <img src="img/menu-icon1.svg" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="img/menu-icon2.svg" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="img/menu-icon3.svg" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="img/menu-icon4.svg" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="img/menu-icon5.svg" alt="">
-            </a>
-        </div>
+    <div class="mobile-icons">
+        <a href="#" class="icon">
+            <img src="img/menu-icon1.svg" alt="">
+        </a>
+        <a href="#" class="icon">
+            <img src="img/menu-icon2.svg" alt="">
+        </a>
+        <a href="#" class="icon">
+            <img src="img/menu-icon3.svg" alt="">
+        </a>
+        <a href="#" class="icon">
+            <img src="img/menu-icon4.svg" alt="">
+        </a>
+        <a href="#" class="icon">
+            <img src="img/menu-icon5.svg" alt="">
+        </a>
+    </div>
     </div>
 
   <div class="profile-wrap">
@@ -74,13 +74,13 @@
                 Главная
                 <img src="img/arr-r.svg" alt="arrow">
             </a>
-            <span>Избранное</span>
+            <span>Предложения</span>
         </div>
         <div class="top-mob-line">
             <a href="profile-mobila.html" class="back">
                 <img src="img/back-icon.svg" alt="">
             </a>
-            <b>Избранное</b>
+            <b>Предложения</b>
         </div>
         <div class="info">
             <div class="profile-menu-wrap">
@@ -111,7 +111,7 @@
                             <span class="text">Профиль</span>
                         </a>
                     </li>
-                    <li >
+                    <li class="active">
                         <a href="offers.html">
                             <span class="icon"></span>
                             <span class="text">Мои предложения</span>
@@ -123,7 +123,7 @@
                             <span class="text">Cделки</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="favorite.html">
                             <span class="icon"></span>
                             <span class="text">Избранное</span>
@@ -152,122 +152,34 @@
                     Удалить профиль
                 </a>
             </div>
-            <div class="profile favorite-account">
+            <div class="profile offers-account">
                 <div class="tabs">
-                    <button class="tab-button active" onclick="switchTab(0)">Компании</button>
-                    <button class="tab-button" onclick="switchTab(1)">Предложения</button>
+                    <button class="tab-button active" onclick="switchTab(0)">Активные предложения</button>
+                    <button class="tab-button" onclick="switchTab(1)">Архив</button>
                   </div>
                   <div class="tab-content-wrap">
                     <div class="tab-content active">
-                        <div class="favorite-items">
-                            <div class="favorite-item">
-                                <div class="img">
-                                    <img src="img/fav-avatar.png" alt="">
+                      <div class="offers-items">
+                        <div class="proposal">
+                            <a href="#">
+                                <div class="icon">
+                                    <img src="img/plus-white.svg" alt="">
                                 </div>
-                                <div class="favorite open"></div>
-                                <div class="name-wrap">
-                                    <b>Название Компании</b>
-                                    <span>
-                                        4.3
-                                        <img src="img/star-small.svg" alt="">
-                                    </span>
-                                </div>
-                                <div class="texts">
-                                    <div class="text">
-                                        <span>Город</span>
-                                        <b>Москва и МО</b>
-                                    </div>
-                                    <div class="text">
-                                        <span>Бартерная стоимость</span>
-                                        <b>₽ 30 000</b>
-                                    </div>
-                                </div>
-                                <div class="tags">
-                                    <a href="#" class="tag">Кейтеринг</a>
-                                    <a href="#" class="tag">Доставка</a>
-                                </div>
-                            </div>
-                            <div class="favorite-item">
-                                <div class="img">
-                                    <img src="img/fav-avatar.png" alt="">
-                                </div>
-                                <div class="favorite open"></div>
-                                <div class="name-wrap">
-                                    <b>Название Компании</b>
-                                    <span>
-                                        4.3
-                                        <img src="img/star-small.svg" alt="">
-                                    </span>
-                                </div>
-                                <div class="texts">
-                                    <div class="text">
-                                        <span>Город</span>
-                                        <b>Москва и МО</b>
-                                    </div>
-                                    <div class="text">
-                                        <span>Бартерная стоимость</span>
-                                        <b>₽ 30 000</b>
-                                    </div>
-                                </div>
-                                <div class="tags">
-                                    <a href="#" class="tag">Кейтеринг</a>
-                                    <a href="#" class="tag">Доставка</a>
-                                </div>
-                            </div>
-                            <div class="favorite-item">
-                                <div class="img">
-                                    <img src="img/fav-avatar.png" alt="">
-                                </div>
-                                <div class="favorite open"></div>
-                                <div class="name-wrap">
-                                    <b>Название Компании</b>
-                                    <span>
-                                        4.3
-                                        <img src="img/star-small.svg" alt="">
-                                    </span>
-                                </div>
-                                <div class="texts">
-                                    <div class="text">
-                                        <span>Город</span>
-                                        <b>Москва и МО</b>
-                                    </div>
-                                    <div class="text">
-                                        <span>Бартерная стоимость</span>
-                                        <b>₽ 30 000</b>
-                                    </div>
-                                </div>
-                                <div class="tags">
-                                    <a href="#" class="tag">Кейтеринг</a>
-                                    <a href="#" class="tag">Доставка</a>
-                                </div>
-                            </div>
+                                <span>Создать <br> новое предложение</span>
+                            </a>
                         </div>
+                      </div>
                     </div>
                     <div class="tab-content">
                         <div class="offers-items">
-                            <div class="offer-item">
-                                <div class="img-wrap">
-                                    <a href="#" class="img">
-                                        <img src="img/offers-img2.png" alt="">
-                                    </a>
-                                    <div class="favorite open"></div>
-                                </div>
-                                <div class="text-wrap">
-                                    <span>Кейтеринг для мероприятия</span>
-                                    <b>4.5 <img src="img/star-small.svg" alt=""></b>
-                                </div>
-                            </div>
-                            <div class="offer-item">
-                                <div class="img-wrap">
-                                    <a href="#" class="img">
-                                        <img src="img/offers-img1.png" alt="">
-                                    </a>
-                                    <div class="favorite open"></div>
-                                </div>
-                                <div class="text-wrap">
-                                    <span>Кейтеринг для мероприятия</span>
-                                    <b>4.3 <img src="img/star-small.svg" alt=""></b>
-                                </div>
+
+                            <div class="proposal">
+                                <a href="#">
+                                    <div class="icon">
+                                        <img src="img/plus-white.svg" alt="">
+                                    </div>
+                                    <span>Создать <br> новое предложение</span>
+                                </a>
                             </div>
                           </div>
                     </div>

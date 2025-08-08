@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWAPPE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+    <div class="main-wrap">
+        <div class="wrapper">
+            <img src="img/black-logo.svg" alt="" class="logo">
+            <div class="form-wrap">
+                <div class="steps-wrap">
+                    <img src="img/onbording-style.png" alt="">
+                    <div class="steps-items">
+                        <span class="num active">1</span>
+                        <span class="dots"></span>
+                        <span class="num">2</span>
+                        <span class="dots"></span>
+                        <span class="num">3</span>
+                    </div>
+                </div>
+                <form class="onbording-form">
+                    <h2>О компании</h2>
+                    <div class="input-wrap">
+                        <span>Название компании</span>
+                        <input type="email" name="email" placeholder="Название">
+                    </div>
+                    <div class="input-wrap">
+                        <span>ИНН компании</span>
+                        <input type="email" name="email" placeholder="ИНН">
+                    </div>
+                    <div class="input-wrap">
+                        <span>Город</span>
+                        <select>
+                            <option value="1">Город</option>
+                            <option value="1">Москва</option>
+                            <option value="1">Ереван</option>
+                        </select>
+                    </div>
+                    <div class="input-wrap">
+                        <span>Индустрия</span>
+                        <select>
+                            <option value="1">Выбери индустрию из списка</option>
+                            <option value="1">Индустрия 1</option>
+                            <option value="1">Индустрия 2</option>
+                        </select>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="w-wrap">
+                            Оценочная стоимость 
+                            <div class="tooltip">
+                                <img src="img/tooltip-icon.svg" alt="">
+                                <span class="text">Tooltip text</span>
+                            </div>
+                        </div>
+                        <input type="email" name="email" placeholder="Стоимость">
+                    </div>
+                    <div class="input-wrap">
+                        <span>Официальный сайт и соцсети</span>
+                        <input type="email" name="email" placeholder="https://">
+                    </div>
+                    <a href="#" class="add">Добавить <img src="img/plus-green.svg" alt=""></a>
+                    <div class="input-wrap">
+                        <span>Логотип</span>
+                        <label class="file-dropzone">
+                            <input type="file" name="file" accept=".jpg,.jpeg,.png,.svg" hidden>
+                            <div class="file-dropzone-content">
+                              <div class="upload-icon">
+                                <img src="img/down-icon.svg" alt="">
+                              </div>
+                              <p>Перетащи или <span class="highlight">выбери файл</span></p>
+                              <p class="file-types">JPG, PNG или SVG</p>
+                            </div>
+                          </label>
+                    </div>
+                    <button class="green-btn" type="button">Продолжить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
+
