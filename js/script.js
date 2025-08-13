@@ -67,3 +67,19 @@ function switchTab(index) {
         console.error('Ошибка при копировании: ', err);
     });
 }
+
+const tabButtons = document.querySelectorAll('.private-police-wrap .tab-button');
+const tabContents = document.querySelectorAll('.private-police-wrap .tab-content');
+
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Сброс активных классов
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+
+    // Добавляем активный класс
+    button.classList.add('active');
+    const target = document.getElementById(button.dataset.tab);
+    target.classList.add('active');
+  });
+});
