@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWAPPE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-style">
+
+   <div class="header-profile">
+    <div class="wrapper">
+        <a href="index.html" class="logo">
+            <img src="img/black-logo.svg" alt="">
+        </a>
+        <form class="search">
+            <input type="text" placeholder="Введи запрос">
+            <button type="button">
+                <img src="img/search-icon.svg" alt="">
+            </button>
+        </form>
+        <div class="icons">
+            <a href="#" class="icon">
+                <img src="img/menu-icon1.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <span class="circle"></span>
+                <img src="img/menu-icon2.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon3.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon4.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <span class="count">+9</span>
+                <img src="img/menu-icon5.svg" alt="">
+            </a>
+        </div>
+        <a href="#" class="user">
+            <img src="img/user-icon.svg" alt="">
+        </a>
+    </div>
+   </div> 
+
+
+   <div class="popups-wrap">
+    <div class="global-popup">
+        <div class="form-wrap">
+            <img src="img/sign-in-style.png" alt="">
+            <div class="popup-close">
+                <img src="img/close-pop.svg" alt="">
+            </div>
+            <form>
+                <h2>Добавить пользователя</h2>
+                <div class="input-wrap">
+                    <span>Имя</span>
+                    <input type="text" name="email" placeholder="Имя">
+                </div>
+                <div class="input-wrap">
+                    <span>E-mail</span>
+                    <input type="email" name="email" placeholder="email.placeholder@mail.com">
+                </div>
+                <div class="input-wrap">
+                    <span>Должность</span>
+                    <input type="text" name="email" placeholder="Менеджер">
+                </div>
+                <div class="input-wrap">
+                    <span>Логотип</span>
+                    <label class="file-dropzone">
+                        <input type="file" name="file" accept=".jpg,.jpeg,.png,.svg" hidden>
+                        <div class="file-dropzone-content">
+                          <div class="upload-icon">
+                            <img src="img/down-icon.svg" alt="">
+                          </div>
+                          <p>Перетащи или <span class="highlight">выбери файл</span></p>
+                          <p class="file-types">JPG, PNG или SVG</p>
+                        </div>
+                      </label>
+                </div>
+                <button class="green-btn" type="button">Сохранить</button>
+            </form>
+        </div>
+    </div>
+   </div>
+
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="info">
+        <a href="index.html" class="footer-logo">
+          <img src="img/footer-logo.svg" alt="footer-logo">
+        </a>
+        <div class="menu-wrap">
+          <h4>Разделы</h4>
+          <a href="#">Стать ВИП</a>
+          <a href="#">Сделки</a>
+          <a href="#">Избранное</a>
+          <a href="#">Чат</a>
+        </div>
+        <div class="menu-wrap">
+          <h4>О Свопи</h4>
+          <a href="#">О компании</a>
+          <a href="#">Частые вопросы</a>
+          <a href="#">Поддержка</a>
+          <a href="#">Solutions</a>
+        </div>
+        <div class="menu-wrap">
+          <h4>Положения и условия</h4>
+          <a href="#">Конфиденциальность</a>
+          <a href="#">Условия</a>
+        </div>
+      </div>
+      <p class="copyright">
+        Swappe - платформа для бартерного обмена и коллабораций. 
+        Условия пользования. Политика конфиденциальности. Оформляя 
+        подписку на Swappe, вы принимаете оферту. &copy; 2024 Свопи. 
+         Все права защищены.
+      </p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
+
