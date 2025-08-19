@@ -510,7 +510,7 @@ select{
   background: #292922;
   padding: 100px 0;
   @media(max-width: 1024px){
-    padding: 50px 0;
+    padding: 50px 0 60px;
   }
   .info{
     @include flex;
@@ -2769,6 +2769,12 @@ background: #F9F2EA;
       width: 100%;
       position: relative;
       z-index: 0;
+      @media(max-width: 1200px){
+        max-width: inherit;
+        width: auto;
+        flex-grow: 1;
+        margin-left: 15px;
+      }
       @media(max-width: 1024px){
         display: none;
       }
@@ -2813,6 +2819,10 @@ background: #F9F2EA;
     .icons{
       @include flex;
       margin-left: 36px;
+      @media(max-width: 1200px){
+       margin-right: 12px;
+       margin-left: 20px;
+      }
       @media(max-width: 1024px){
         display: none;
       }
