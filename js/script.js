@@ -83,3 +83,76 @@ tabButtons.forEach(button => {
     target.classList.add('active');
   });
 });
+
+const switchElement = document.getElementById('mySwitch');
+
+switchElement.addEventListener('click', () => {
+  switchElement.classList.toggle('active');
+});
+
+$(".not-icon").on("click", function(e) {
+  e.preventDefault();
+  e.stopPropagation(); // предотвращаем всплытие
+  $(".notifications").toggleClass("show");
+});
+
+// Закрытие при клике вне блока .notifications
+$(document).on("click", function(e) {
+  if (!$(e.target).closest('.notifications').length) {
+    $(".notifications").removeClass("show");
+  }
+});
+
+// Не закрывать при клике внутри .notifications
+$(".notifications").on("click", function(e) {
+  e.stopPropagation();
+});
+
+$(".notifications .top-mob .back").on("click", function(e) {
+  e.preventDefault();
+  $(".notifications").removeClass("show");
+});
+
+$(".filter-btn").on("click", function(e) {
+  e.preventDefault();
+  $(".search-filter-wrap").addClass("show");
+  $("body, html").addClass("overflow");
+});
+
+$(".search-filter-wrap .close").on("click", function() {
+  $(".search-filter-wrap").removeClass("show");
+  $("body, html").removeClass("overflow");
+});
+
+function setupSlider(sliderId, minId, maxId) {
+  const container = document.getElementById(sliderId);
+  const input1 = container.querySelectorAll('input')[0];
+  const input2 = container.querySelectorAll('input')[1];
+  const track = container.querySelector('.slider-track');
+  const minOutput = document.getElementById(minId);
+  const maxOutput = document.getElementById(maxId);
+
+  function updateTrack() {
+    let min = parseInt(input1.value);
+    let max = parseInt(input2.value);
+    if (min > max) [min, max] = [max, min];
+
+    minOutput.textContent = '₽' + min;
+    maxOutput.textContent = '₽' + max;
+
+    const percent1 = (min / 100000) * 100;
+    const percent2 = (max / 100000) * 100;
+
+    track.style.left = percent1 + '%';
+    track.style.width = (percent2 - percent1) + '%';
+    track.style.background = '#1e4023';
+  }
+
+  input1.addEventListener('input', updateTrack);
+  input2.addEventListener('input', updateTrack);
+
+  updateTrack(); // Initial position
+}
+
+setupSlider('barter-slider', 'barter-min', 'barter-max');
+setupSlider('company-slider', 'company-min', 'company-max');

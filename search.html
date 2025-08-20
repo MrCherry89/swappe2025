@@ -36,7 +36,7 @@
                 <a href="#" class="icon">
                     <img src="img/menu-icon4.svg" alt="">
                 </a>
-                <a href="#" class="icon">
+                <a href="#" class="icon not-icon">
                     <span class="count">+9</span>
                     <img src="img/menu-icon5.svg" alt="">
                 </a>
@@ -64,12 +64,380 @@
             <a href="#" class="icon">
                 <img src="img/menu-icon4.svg" alt="">
             </a>
-            <a href="#" class="icon">
+            <a href="#" class="icon not-icon">
                 <img src="img/menu-icon5.svg" alt="">
             </a>
         </div>
     </div>
     
+    <div class="notifications-wrapper">
+        <div class="notifications">
+            <div class="top-mob">
+                <a href="#" class="back">
+                    <img src="img/back-left.svg" alt="">
+                </a>
+                <b>Уведомления</b>
+            </div>
+            <div class="top-line">
+                <b>Уведомления</b>
+                <div class="new">
+                    <span>Только новые</span>
+                    <div class="switch" id="mySwitch">
+                        <div class="slider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                Пометить все просмотренными (2)
+            </div>
+            <a href='#' class="notifications-item">
+                <div class="icon">
+                    <img src="img/search/notifications-icon1.svg" alt="">
+                </div>
+                <div class="texts">
+                    <b>Новое предложение</b>
+                    <span>Diamond кейтеринг предлагает сделку</span>
+                </div>
+                <div class="circle"></div>
+            </a>
+            <a href='#' class="notifications-item">
+                <div class="icon">
+                    <img src="img/search/notifications-icon2.svg" alt="">
+                </div>
+                <div class="texts">
+                    <b>Cтатус сделки</b>
+                    <span>Diamond кейтеринг принял предложение</span>
+                </div>
+                <div class="circle"></div>
+            </a>
+            <div class="border"></div>
+            <div class="notifications-items">
+                <a href='#' class="notifications-item">
+                    <div class="icon">
+                        <img src="img/search/notifications-icon3.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Cтатус сделки</b>
+                        <span>Diamond кейтеринг принял предложение</span>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arr-r.svg" alt="">
+                    </div>
+                </a>
+                <a href='#' class="notifications-item">
+                    <div class="icon">
+                        <img src="img/search/notifications-icon4.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Предложение прошло модерацию</b>
+                        <span>Кейтеринг в день мероприятия с выездом на площадку</span>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arr-r.svg" alt="">
+                    </div>
+                </a>
+                <a href='#' class="notifications-item">
+                    <div class="icon">
+                        <img src="img/search/notifications-icon5.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Предложение не прошло модерацию</b>
+                        <span>Кейтеринг в день мероприятия с выездом на площадку</span>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arr-r.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="border"></div>
+            <div class="not-info">
+                <div class="head">
+                    <b>Как все прошло?</b>
+                    <button class="close" type="button">
+                        <img src="img/close-pop.svg" alt="">
+                    </button>
+                </div>
+                <p>Ваша сделка с Dостаевский завершена. Поделись отзывом
+                    и помоги другим найти ту самую коллаборацию!</p>
+                <div class="info">
+                    <div class="text-wrap">
+                        <div class="texts">
+                            <b>Кейтеринг для мероприятия</b>
+                            <span>Dостаевский</span>
+                        </div>
+                        <span>26 Nov 2021</span>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="img/search/not-info-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="leave-feedback">
+                <img src="img/search/rew-icon.svg" alt="">
+                <b>Оставить отзыв</b>
+            </a>
+        </div>
+    </div>
+
+    <div class="search-wrapper">
+        <div class="wrapper">
+            <div class="mobile-filter-btns">
+                <form>
+                    <button type="button">
+                        <img src="img/search-icon.svg" alt="">
+                    </button>
+                    <input type="text" placeholder="Введи запрос">
+                </form>
+                <a href="#" class="favorite-btn">
+                    <img src="img/heart.svg" alt="">
+                </a>
+                <a href="#" class="filter-btn">
+                    <img src="img/filter-icon.svg" alt="">
+                </a>
+            </div>
+            <div class="search-filter-wrap">
+                <div class="top-mobile">
+                    <b>Фильтры</b>
+                    <button class="close" type="button">
+                        <img src="img/close-pop.svg" alt="">
+                    </button>
+                </div>
+                <span class="title">Тип</span>
+                <div class="radios">
+                    <div class="radio-wrap">
+                        <input type="radio" id="radio1" name="checkbox" />
+                        <label for="radio1">
+                            Товары
+                        </label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input type="radio" id="radio2" name="checkbox" checked />
+                        <label for="radio2">
+                            Услуги
+                        </label>
+                    </div>
+                </div>
+                <span class="title">Вид</span>
+                <div class="radios">
+                    <div class="radio-wrap">
+                        <input type="radio" id="radio3" name="checkbox2" checked/>
+                        <label for="radio3">
+                            Онлайн
+                        </label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input type="radio" id="radio4" name="checkbox2"  />
+                        <label for="radio4">
+                            Оффлайн
+                        </label>
+                    </div>
+                </div>
+                <span class="title">Категории</span>
+                <div class="tags">
+                    <button class="tag" type="button">Брендирование</button>
+                    <button class="tag active" type="button">Доставка <img src="img/close-menu.svg" alt=""></button>
+                    <button class="tag" type="button">Дегустация</button>
+                    <button class="tag active" type="button">Кейтеринг <img src="img/close-menu.svg" alt=""></button>
+                    <button class="tag" type="button">Клининг</button>
+                    <button class="tag" type="button">Мастер-классы</button>
+                    <button class="tag" type="button">Оформление площадок</button>
+                    <button class="tag" type="button">Операторская съемка</button>
+                    <button class="tag" type="button">Проведение мероприятий</button>
+                    <button class="tag" type="button">Фотосъемка</button>
+                    <button class="tag" type="button">Флористика</button>
+                </div>
+                <div class="slider-block">
+                    <div class="title">Цена бартера</div>
+                    <div class="range-slider" id="barter-slider">
+                      <div class="slider-track"></div>
+                      <input type="range" min="0" max="100000" step="1000" value="25000">
+                      <input type="range" min="0" max="100000" step="1000" value="75000">
+                    </div>
+                    <div class="range-values">
+                      <span id="barter-min">₽25000</span>
+                      <span id="barter-max">₽75000</span>
+                    </div>
+                  </div>
+                  <div class="slider-block">
+                    <div class="title">Цена компании</div>
+                    <div class="range-slider" id="company-slider">
+                      <div class="slider-track"></div>
+                      <input type="range" min="0" max="100000" step="1000" value="25000">
+                      <input type="range" min="0" max="100000" step="1000" value="75000">
+                    </div>
+                    <div class="range-values">
+                      <span id="company-min">₽25000</span>
+                      <span id="company-max">₽75000</span>
+                    </div>
+                  </div>
+                <span class="title">Категории</span>
+                <select>
+                    <option value="1">Москва</option>
+                    <option value="2">Петербург</option>
+                    <option value="3">Ереван</option>
+                </select>
+                <a href="#" class="green-btn">Применить фильтрацию</a>
+            </div>
+            <div class="search-info-block">
+                <div class="info-top">
+                    <div class="texts">
+                        <b>49</b>
+                        <span>найдено</span>
+                    </div>
+                    <select>
+                        <option value="1">По Цене Бартера</option>
+                        <option value="1">По Цене компании</option>
+                    </select>
+                </div>
+                <div class="items">
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img1.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского праздника</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img2.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img3.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского праздника</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img1.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского праздника</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img2.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img3.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского праздника</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img1.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского праздника</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img2.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                    <div class="offer-item">
+                        <div class="img-wrap">
+                            <a href="#" class="img">
+                                <img src="img/offer-img3.png" alt="">
+                            </a>
+                            <div class="favorite open"></div>
+                        </div>
+                        <div class="text-wrap">
+                            <span>ВкусВилл Праздник</span>
+                            <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                        </div>
+                        <p>Кейтеринг для детского праздника</p>
+                        <span class="barter">Бартер</span>
+                        <b class="price">₽15 000</b>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <button type="button">
+                        <img src="img/right.svg" alt="" class="rotate">
+                    </button>
+                    <span>Страница 1 из 8</span>
+                    <button type="button">
+                        <img src="img/right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <footer class="footer">
     <div class="wrapper">
