@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWAPPE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-style">
+
+    <div class="header-profile">
+        <div class="wrapper">
+            <a href="index.html" class="logo">
+                <img src="img/black-logo.svg" alt="">
+            </a>
+            <form class="search">
+                <input type="text" placeholder="Введи запрос">
+                <button type="button">
+                    <img src="img/search-icon.svg" alt="">
+                </button>
+            </form>
+            <div class="icons">
+                <a href="#" class="icon">
+                    <img src="img/menu-icon1.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <span class="circle"></span>
+                    <img src="img/menu-icon2.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <img src="img/menu-icon3.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <img src="img/menu-icon4.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <span class="count">+9</span>
+                    <img src="img/menu-icon5.svg" alt="">
+                </a>
+            </div>
+            <a href="#" class="user">
+                <img src="img/user-icon.svg" alt="">
+            </a>
+        </div>
+    </div> 
+    
+    <div class="wrapper">
+        <div class="mobile-icons">
+            <a href="#" class="icon">
+                <img src="img/menu-icon1.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon2.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon3.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon4.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon5.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="creating-proposal">
+        <div class="wrapper">
+          <div class="top-info">
+            <h4>Создание предложения</h4>
+            <div class="close">
+              <img src="img/close-pop.svg" alt="">
+            </div>
+          </div>
+          <div class="info-texts">
+            <div class="texts green">
+                <span class="num">1</span>
+                <span class="text">Информация о товаре/услуге</span>
+            </div>
+            <div class="texts">
+                <span class="num">2</span>
+                <span class="text">Предварительный просмотр</span>
+            </div>
+          </div>
+          <div class="general-information-form">
+            <div class="info">
+                <h4>Общая информация</h4>
+                <span class="creating-title">Тип</span>
+                <div class="radios">
+                    <div class="radio-wrap">
+                        <input type="radio" id="radio1" name="checkbox" checked />
+                        <label for="radio1">
+                          <span></span>
+                          Товар
+                        </label>
+                      </div>
+                      <div class="radio-wrap">
+                        <input type="radio" id="radio2" name="checkbox" />
+                        <label for="radio2">
+                          <span></span>
+                          Услуга
+                        </label>
+                      </div>
+                </div>
+                <span class="creating-title">Вид</span>
+                <div class="radios">
+                    <div class="radio-wrap">
+                        <input type="radio" id="radio3" name="checkbox2"  />
+                        <label for="radio3">
+                          <span></span>
+                          Онлайн
+                        </label>
+                      </div>
+                      <div class="radio-wrap">
+                        <input type="radio" id="radio4" name="checkbox2" checked/>
+                        <label for="radio4">
+                          <span></span>
+                          Оффлайн
+                        </label>
+                      </div>
+                </div>
+                <span class="creating-title">Название</span>
+                <input type="text" placeholder="Что вы предлагаете контрагентам?">
+                <span class="creating-title">Категория</span>
+                <span class="subtitle">Можешь выбрать несколько</span>
+                <div class="tags">
+                    <button type="button">Брендирование</button>
+                    <button type="button " class="active">Доставка 
+                        <img src="img/close-menu.svg" alt=""></button>
+                    <button type="button">Дегустация</button>
+                    <button type="button " class="active">Кейтеринг
+                        <img src="img/close-menu.svg" alt="">
+                    </button>
+                    <button type="button">Клининг</button>
+                    <button type="button">Мастер-классы</button>
+                    <button type="button">Оформление площадок</button>
+                    <button type="button">Операторская съемка</button>
+                    <button type="button">Проведение мероприятий</button>
+                    <button type="button">Фотосъемка</button>
+                    <button type="button">Флористика</button>
+                    <button type="button">Другое</button>
+                </div>
+                <span class="creating-title">Оценочная стоимость бартера, ₽</span>
+                <input type="text" placeholder="Стоимость, ₽" class="price-input">
+                <span class="creating-title">Регион покрытия</span>
+                <div class="area">
+                    <span class="icon">
+                        <img src="img/creating-proposal/area-icon.svg" alt="">
+                    </span>
+                    <span class="border"> Выбери на карте</span>
+                </div>
+                <span class="creating-title">Описание</span>
+                <textarea placeholder="Расскажи подробнее о предоставляемой услуге"></textarea>
+                <h4>Медиа</h4>
+                <div class="title-nums">
+                    <span class="text">Фото</span>
+                    <span class="num">0/9</span>
+                </div>
+                <div class="info-block">
+                    <div class="icon">
+                        <img src="img/creating-proposal/err-green.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Управляй порядком</b>
+                        <span>Чтобы сделать фото обложкой карточки, перетащи его на
+                             первое место. Остальные фото расставь в том порядке,
+                              который хочешь видеть на сайте
+                        </span>
+                    </div>
+                    <div class="close">
+                        <img src="img/close-pop.svg" alt="close">
+                    </div>
+                </div>
+                <div class="media-items">
+                    <div class="item active">
+                        <span class="style">Обложка</span>
+                        <img src="img/creating-proposal/plus-green2.svg" alt="" class="icon">
+                    </div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" alt="plus-icon" class="icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                </div>
+                <div class="title-nums">
+                    <span class="text">Видео</span>
+                    <span class="num">0/4</span>
+                </div>
+                <div class="video-items">
+                    <div class="item active">
+                        <img src="img/creating-proposal/plus-green2.svg" alt="plus-icon" class="icon">
+                    </div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                    <div class="item"><img src="img/creating-proposal/plus-green2.svg" class="icon" alt="plus-icon"></div>
+                </div>
+            </div>
+            <button class="green-btn">Предварительный просмотр</button>
+          </div>
+        </div>
+      </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+        <div class="info">
+            <a href="index.html" class="footer-logo">
+            <img src="img/footer-logo.svg" alt="footer-logo">
+            </a>
+            <div class="menu-wrap">
+            <h4>Разделы</h4>
+            <a href="#">Стать ВИП</a>
+            <a href="#">Сделки</a>
+            <a href="#">Избранное</a>
+            <a href="#">Чат</a>
+            </div>
+            <div class="menu-wrap">
+            <h4>О Свопи</h4>
+            <a href="#">О компании</a>
+            <a href="#">Частые вопросы</a>
+            <a href="#">Поддержка</a>
+            <a href="#">Solutions</a>
+            </div>
+            <div class="menu-wrap">
+            <h4>Положения и условия</h4>
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Условия</a>
+            </div>
+        </div>
+        <p class="copyright">
+            Swappe - платформа для бартерного обмена и коллабораций. 
+            Условия пользования. Политика конфиденциальности. Оформляя 
+            подписку на Swappe, вы принимаете оферту. &copy; 2024 Свопи. 
+            Все права защищены.
+        </p>
+        </div>
+    </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
+

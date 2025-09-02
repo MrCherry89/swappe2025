@@ -84,10 +84,15 @@ tabButtons.forEach(button => {
   });
 });
 
-const switchElement = document.getElementById('mySwitch');
-
-switchElement.addEventListener('click', () => {
-  switchElement.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', () => {
+  const switchElement = document.getElementById('mySwitch');
+  if (switchElement) {
+    switchElement.addEventListener('click', () => {
+      switchElement.classList.toggle('active');
+    });
+  } else {
+    console.warn('Элемент с id="mySwitch" не найден');
+  }
 });
 
 $(".not-icon").on("click", function(e) {
@@ -126,11 +131,24 @@ $(".search-filter-wrap .close").on("click", function() {
 
 function setupSlider(sliderId, minId, maxId) {
   const container = document.getElementById(sliderId);
-  const input1 = container.querySelectorAll('input')[0];
-  const input2 = container.querySelectorAll('input')[1];
-  const track = container.querySelector('.slider-track');
   const minOutput = document.getElementById(minId);
   const maxOutput = document.getElementById(maxId);
+
+  if (!container || !minOutput || !maxOutput) {
+    console.warn(`Не найден один из элементов: ${sliderId}, ${minId}, ${maxId}`);
+    return;
+  }
+
+  const inputs = container.querySelectorAll('input');
+  const track = container.querySelector('.slider-track');
+
+  if (inputs.length < 2 || !track) {
+    console.warn(`Недостаточно input'ов или отсутствует .slider-track в #${sliderId}`);
+    return;
+  }
+
+  const input1 = inputs[0];
+  const input2 = inputs[1];
 
   function updateTrack() {
     let min = parseInt(input1.value);
@@ -154,5 +172,21 @@ function setupSlider(sliderId, minId, maxId) {
   updateTrack(); // Initial position
 }
 
-setupSlider('barter-slider', 'barter-min', 'barter-max');
-setupSlider('company-slider', 'company-min', 'company-max');
+const thumbsSwiper = new Swiper('.thumbs', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  watchSlidesProgress: true,
+});
+
+// Основной слайдер
+const mainSwiper = new Swiper('.main-slider', {
+  spaceBetween: 10,
+  speed: 500, // Плавность переключения — 500 мс
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: thumbsSwiper,
+  },
+});
