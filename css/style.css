@@ -3300,6 +3300,7 @@ select:focus {
 }
 .mobile-icons .icon img {
   margin: auto;
+  width: 26px;
 }
 
 .header-profile {
@@ -5942,6 +5943,13 @@ select:focus {
   border: 1px dashed #68727D;
 }
 
+.bonuses-info-block h2, .bonuses-info-block .manage-btn {
+  font-family: "Geologica", sans-serif;
+}
+.bonuses-info-block h2 {
+  line-height: 110%;
+}
+
 .load-form-wrap {
   padding: 24px;
   border-radius: 16px;
@@ -6143,6 +6151,10 @@ select:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.profile-menu li:nth-child(4) a .icon {
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
