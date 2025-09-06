@@ -2717,6 +2717,17 @@ background: #F9F2EA;
   }
 }
 
+.social{
+  .links{
+    a{
+      width: 24px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
 .mobile-icons{
   @include align-center;
   @include justify-between;
@@ -2906,3 +2917,4 @@ background: #F9F2EA;
   @import './pages/popups/popups';
   @import './pages/creating-proposal/creating-proposal';
   @import './pages/load-popups/load-popups';
+  @import './pages/complain/complain';

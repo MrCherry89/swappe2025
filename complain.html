@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWAPPE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-style">
+
+    <div class="header-profile">
+        <div class="wrapper">
+            <a href="index.html" class="logo">
+                <img src="img/black-logo.svg" alt="">
+            </a>
+            <form class="search">
+                <input type="text" placeholder="Введи запрос">
+                <button type="button">
+                    <img src="img/search-icon.svg" alt="">
+                </button>
+            </form>
+            <div class="icons">
+                <a href="#" class="icon">
+                    <img src="img/menu-icon1.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <span class="circle"></span>
+                    <img src="img/menu-icon2.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <img src="img/menu-icon3.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <img src="img/menu-icon4.svg" alt="">
+                </a>
+                <a href="#" class="icon">
+                    <span class="count">+9</span>
+                    <img src="img/menu-icon5.svg" alt="">
+                </a>
+            </div>
+            <a href="#" class="user">
+                <img src="img/user-icon.svg" alt="">
+            </a>
+        </div>
+    </div> 
+    
+    <div class="wrapper">
+        <div class="mobile-icons">
+            <a href="#" class="icon">
+                <img src="img/menu-icon1.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon2.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon3.svg" alt="">
+            </a>
+            <a href="#" class="icon">
+                <img src="img/menu-icon4.svg" alt="">
+            </a>
+            <a href="#" class="icon not-icon">
+                <img src="img/menu-icon5.svg" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <div class="notifications-wrapper">
+        <div class="notifications">
+            <div class="top-mob">
+                <a href="#" class="back">
+                    <img src="img/back-left.svg" alt="">
+                </a>
+                <b>Уведомления</b>
+            </div>
+            <div class="top-line">
+                <b>Уведомления</b>
+                <div class="new">
+                    <span>Только новые</span>
+                    <div class="switch" id="mySwitch">
+                        <div class="slider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                Пометить все просмотренными (2)
+            </div>
+            <a href='#' class="notifications-item">
+                <div class="icon">
+                    <img src="img/search/notifications-icon1.svg" alt="">
+                </div>
+                <div class="texts">
+                    <b>Новое предложение</b>
+                    <span>Diamond кейтеринг предлагает сделку</span>
+                </div>
+                <div class="circle"></div>
+            </a>
+            <a href='#' class="notifications-item">
+                <div class="icon">
+                    <img src="img/search/notifications-icon2.svg" alt="">
+                </div>
+                <div class="texts">
+                    <b>Cтатус сделки</b>
+                    <span>Diamond кейтеринг принял предложение</span>
+                </div>
+                <div class="circle"></div>
+            </a>
+            <div class="border"></div>
+            <div class="notifications-items">
+                <a href='#' class="notifications-item">
+                    <div class="icon">
+                        <img src="img/search/notifications-icon3.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Cтатус сделки</b>
+                        <span>Diamond кейтеринг принял предложение</span>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arr-r.svg" alt="">
+                    </div>
+                </a>
+                <a href='#' class="notifications-item">
+                    <div class="icon">
+                        <img src="img/search/notifications-icon4.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Предложение прошло модерацию</b>
+                        <span>Кейтеринг в день мероприятия с выездом на площадку</span>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arr-r.svg" alt="">
+                    </div>
+                </a>
+                <a href='#' class="notifications-item">
+                    <div class="icon">
+                        <img src="img/search/notifications-icon5.svg" alt="">
+                    </div>
+                    <div class="texts">
+                        <b>Предложение не прошло модерацию</b>
+                        <span>Кейтеринг в день мероприятия с выездом на площадку</span>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arr-r.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="border"></div>
+            <div class="not-info">
+                <div class="head">
+                    <b>Как все прошло?</b>
+                    <button class="close" type="button">
+                        <img src="img/close-pop.svg" alt="">
+                    </button>
+                </div>
+                <p>Ваша сделка с Dостаевский завершена. Поделись отзывом
+                    и помоги другим найти ту самую коллаборацию!</p>
+                <div class="info">
+                    <div class="text-wrap">
+                        <div class="texts">
+                            <b>Кейтеринг для мероприятия</b>
+                            <span>Dостаевский</span>
+                        </div>
+                        <span>26 Nov 2021</span>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="img/search/not-info-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="leave-feedback">
+                <img src="img/search/rew-icon.svg" alt="">
+                <b>Оставить отзыв</b>
+            </a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="breadcrumbs hide-mobile">
+            <a href="#index.html">
+                Главная
+                <img src="img/arr-r.svg" alt="arrow">
+            </a>
+            <a href="#">
+                ВкусВилл Праздник
+                <img src="img/arr-r.svg" alt="arrow">
+            </a>
+            <span>Кейтеринг для мероприятий</span>
+        </div>
+    </div>
+
+    <div class="creating-proposal">
+        <div class="wrapper">
+          <div class="proposal-info">
+            <div class="left-info">
+                <div class="swiper main-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/creating-proposal/slider-img.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img/creating-proposal/slider-img2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img/creating-proposal/slider-img2.png" alt=""> </div>
+                      <div class="swiper-slide"><img src="img/creating-proposal/slider-img.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img/creating-proposal/slider-img.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="swiper thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/creating-proposal/slider-img.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/creating-proposal/slider-img2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/creating-proposal/slider-img2.png" alt=""> 
+                            <span class="icon">
+                                <img src="img/creating-proposal/video-icon.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="swiper-slide"><img src="img/creating-proposal/slider-img.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/creating-proposal/slider-img.png" alt=""></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="right-info">
+                <h3>Кейтеринг для мероприятий</h3>
+                <div class="rate">
+                    <b>ВкусВилл Праздник</b>
+                    <div class="rate-text">
+                        4.5
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <span>(34)</span>
+                </div>
+                <b class="price">₽20 000</b>
+                <div class="links">
+                    <a href="#">Доставка</a>
+                    <a href="#">Кейтеринг</a>
+                </div>
+                <div class="info-btns">
+                    <a href="#" class="green-btn">
+                        <img src="img/start-sale.svg" alt="">
+                        Предложить сделку
+                    </a>
+                    <a href="#" class="heart-btn">
+                        <img src="img/heart.svg" alt="">
+                    </a>
+                    <div class="dots-wrap">
+                        <button class="dots">
+                            <img src="img/dots-menu.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <h4>Регион покрытия:</h4>
+                <div class="map">
+                    <img src="img/creating-proposal/reg-map.png" alt="">
+                </div>
+
+            </div>
+          </div>
+          <div class="info-text">
+            <h5>Описание</h5>
+          <p class="text">
+              Кухня. Здесь все время что-то кипит, печется, шкварчит, 
+              тушится, жарится. Повара знают, как и что красиво оформить,
+               куда и чего побольше насыпать. Однако прежде чем подавать
+                фирменное блюдо, нужно позвать гостей за ваши столы. Жаль,
+                 но аппетитные запахи с кухни не доходят до пользователей
+                  интернета. К счастью, здесь вам на помощь приходят образы, 
+                  визуализация и эксклюзив.
+          </p>
+          </div>
+          <div class="title-wrap">
+            <h3>Отзывы</h3>
+            <div class="stars-info">
+                <div class="images">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star-dubl.svg" alt="">
+                </div>
+                <span>4.5 / 5.0</span>
+            </div>
+          </div>
+          <div class="review-items">
+            <div class="review-item">
+                <div class="top">
+                    <div class="stars">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star-dubl.svg" alt="">
+                    </div>
+                </div>
+                <p class="text">
+                    The platform is incredibly user-friendly, allowing me to
+                        easily manage my inventory, create stunning product
+                        listings, and process orders seamlessly. The advanced 
+                        analytics have also provided valuable insights into my 
+                        customers.
+                </p>
+                <div class="name-wrap">
+                    <div class="img">
+                        <img src="img/rew-avatar.png" alt="">
+                    </div>
+                    <b>Название компании</b>
+                    <span>26 Nov 2021</span>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="top">
+                    <div class="stars">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star-dubl.svg" alt="">
+                    </div>
+                </div>
+                <p class="text">
+                    The platform is incredibly user-friendly, allowing me to
+                        easily manage my inventory, create stunning product
+                        listings, and process orders seamlessly. The advanced 
+                        analytics have also provided valuable insights into my 
+                        customers.
+                </p>
+                <div class="name-wrap">
+                    <div class="img">
+                        <img src="img/rew-avatar.png" alt="">
+                    </div>
+                    <b>Название компании</b>
+                    <span>26 Nov 2021</span>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="top">
+                    <div class="stars">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star-dubl.svg" alt="">
+                    </div>
+                </div>
+                <p class="text">
+                    The platform is incredibly user-friendly, allowing me to
+                        easily manage my inventory, create stunning product
+                        listings, and process orders seamlessly. The advanced 
+                        analytics have also provided valuable insights into my 
+                        customers.
+                </p>
+                <div class="name-wrap">
+                    <div class="img">
+                        <img src="img/rew-avatar.png" alt="">
+                    </div>
+                    <b>Название компании</b>
+                    <span>26 Nov 2021</span>
+                </div>
+            </div>
+        </div>
+        <div class="look-more">
+            <h3>Посмотри еще</h3>
+            <div class="look-more-items">
+                <div class="offer-item">
+                    <div class="img-wrap">
+                        <a href="#" class="img">
+                            <img src="img/offers-img2.png" alt="">
+                        </a>
+                        <div class="favorite open"></div>
+                    </div>
+                    <div class="text-wrap">
+                        <span>Кейтеринг для мероприятия</span>
+                        <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                    </div>
+                    <b class="name">Кейтеринг для мероприятия</b>
+                    <div class="texts">
+                        <span>Бартер</span>
+                        <b>₽30 000</b>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <div class="img-wrap">
+                        <a href="#" class="img">
+                            <img src="img/offers-img2.png" alt="">
+                        </a>
+                        <div class="favorite open"></div>
+                    </div>
+                    <div class="text-wrap">
+                        <span>Кейтеринг для мероприятия</span>
+                        <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                    </div>
+                    <b class="name">Кейтеринг для мероприятия</b>
+                    <div class="texts">
+                        <span>Бартер</span>
+                        <b>₽30 000</b>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <div class="img-wrap">
+                        <a href="#" class="img">
+                            <img src="img/offers-img2.png" alt="">
+                        </a>
+                        <div class="favorite"></div>
+                    </div>
+                    <div class="text-wrap">
+                        <span>Кейтеринг для мероприятия</span>
+                        <b>4.5 <img src="img/star-small.svg" alt=""></b>
+                    </div>
+                    <b class="name">Кейтеринг для мероприятия</b>
+                    <div class="texts">
+                        <span>Бартер</span>
+                        <b>₽30 000</b>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="green-btn">Показать больше</a>
+        </div>
+      </div>
+
+
+    <footer class="footer">
+        <div class="wrapper">
+        <div class="info">
+            <a href="index.html" class="footer-logo">
+            <img src="img/footer-logo.svg" alt="footer-logo">
+            </a>
+            <div class="menu-wrap">
+            <h4>Разделы</h4>
+            <a href="#">Стать партнером Swappe</a>
+            <a href="#">Сделки</a>
+            <a href="#">Избранное</a>
+            <a href="#">Чат</a>
+            </div>
+            <div class="menu-wrap">
+            <h4>О Свопи</h4>
+            <a href="#">О компании</a>
+            <a href="#">Частые вопросы</a>
+            <a href="#">Поддержка</a>
+            <a href="#">Solutions</a>
+            </div>
+            <div class="menu-wrap">
+            <h4>Положения и условия</h4>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия пользования</a>
+            </div>
+        </div>
+        <p class="copyright">
+            Swappe - платформа для бартерного обмена и коллабораций. 
+            Условия пользования. Политика конфиденциальности. Оформляя 
+            подписку на Swappe, вы принимаете оферту. &copy; 2024 Свопи. 
+            Все права защищены.
+        </p>
+        </div>
+    </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
+

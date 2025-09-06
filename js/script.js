@@ -190,3 +190,30 @@ const mainSwiper = new Swiper('.main-slider', {
     swiper: thumbsSwiper,
   },
 });
+
+const thumbsSwiper2 = new Swiper('.thumbs', {
+  spaceBetween: 10,
+  watchSlidesProgress: true,
+  slidesPerView: 4, // значение по умолчанию (десктоп)
+  breakpoints: {
+    0: {
+      slidesPerView: 3, // от 0 до 767px
+    },
+    768: {
+      slidesPerView: 4, // от 768px и выше
+    }
+  }
+});
+
+// Основной слайдер
+const mainSwiper2 = new Swiper('.main-slider', {
+  spaceBetween: 10,
+  speed: 500, // Плавность переключения — 500 мс
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: thumbsSwiper2,
+  },
+});
