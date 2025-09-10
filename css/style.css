@@ -5218,6 +5218,33 @@ select:focus {
     padding-bottom: 50px;
   }
 }
+.creating-proposal .texts-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 50px 0;
+}
+@media (max-width: 1024px) {
+  .creating-proposal .texts-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .creating-proposal .texts-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+.creating-proposal .texts-wrap .item b {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  color: #252525;
+}
+.creating-proposal .texts-wrap .item p {
+  font-size: 16px;
+  color: #68727D;
+}
 .creating-proposal .top-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5749,10 +5776,24 @@ select:focus {
   justify-content: space-between;
   margin-bottom: 16px;
 }
+@media (max-width: 767px) {
+  .proposal-info .right-info .list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 .proposal-info .right-info .list li b {
   font-weight: 500;
   color: #252525;
   font-size: 16px;
+}
+@media (max-width: 767px) {
+  .proposal-info .right-info .list li b {
+    display: block;
+    margin-bottom: 2px;
+  }
 }
 .proposal-info .right-info .list li span {
   font-size: 16px;
