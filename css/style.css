@@ -7315,4 +7315,111 @@ select:focus {
   color: #BBB8B0;
 }
 
+.media-popup-wrap {
+  padding: 24px;
+  border-radius: 32px;
+  background: #FFFCF5;
+  max-width: 620px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .media-popup-wrap {
+    padding: 32px 16px;
+  }
+}
+.media-popup-wrap > b {
+  text-align: left;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #343330;
+}
+@media (max-width: 767px) {
+  .media-popup-wrap > b {
+    font-size: 16px;
+  }
+}
+.media-popup-wrap > span {
+  text-align: left;
+  margin-bottom: 24px;
+  font-size: 16px;
+  display: block;
+  color: #68727D;
+}
+@media (max-width: 767px) {
+  .media-popup-wrap > span {
+    font-size: 14px;
+  }
+}
+.media-popup-wrap .green-btn {
+  margin-top: 24px;
+}
+.media-popup-wrap .green-btn.disabled {
+  opacity: 0.5;
+}
+.media-popup-wrap .med-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  text-align: left;
+}
+.media-popup-wrap .med-items .med-item {
+  padding: 12px;
+  border-radius: 24px;
+  background: rgba(242, 233, 220, 0.6);
+}
+.media-popup-wrap .med-items .med-item.active {
+  background: rgba(30, 74, 47, 0.2);
+}
+.media-popup-wrap .med-items .med-item.active h5, .media-popup-wrap .med-items .med-item.active b {
+  color: #1E4A2F;
+}
+.media-popup-wrap .med-items .med-item .img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.media-popup-wrap .med-items .med-item .img-wrap img {
+  width: 100%;
+}
+.media-popup-wrap .med-items .med-item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #252525;
+}
+@media (max-width: 767px) {
+  .media-popup-wrap .med-items .med-item h5 {
+    font-size: 14px;
+  }
+}
+.media-popup-wrap .med-items .med-item span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #BBB8B0;
+}
+@media (max-width: 767px) {
+  .media-popup-wrap .med-items .med-item span {
+    font-size: 12px;
+  }
+}
+.media-popup-wrap .med-items .med-item b {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 2px;
+  color: #252525;
+}
+@media (max-width: 767px) {
+  .media-popup-wrap .med-items .med-item b {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
