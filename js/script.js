@@ -217,3 +217,29 @@ const mainSwiper2 = new Swiper('.main-slider', {
     swiper: thumbsSwiper2,
   },
 });
+
+const swiperI = new Swiper('.reviews-swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+
+  speed: 8000, // отвечает за плавность
+  allowTouchMove: true,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      pagination: false,
+    }
+  }
+});
