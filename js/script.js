@@ -243,3 +243,36 @@ const swiperI = new Swiper('.reviews-swiper', {
     }
   }
 });
+
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.new-header');
+
+  if (!header) return;
+
+  if (window.scrollY >= 20) {
+    header.classList.add('fix');
+  } else {
+    header.classList.remove('fix');
+  }
+});
+
+document.querySelector(".new-drop-menu")?.addEventListener("click", function() {
+  const menu = document.querySelector(".menu-wrap");
+  const html = document.documentElement;
+  const body = document.body;
+
+  menu?.classList.add("open");
+  html.classList.add("overflow");
+  body.classList.add("overflow");
+});
+
+// закрыть меню по клику на кнопку .close внутри .menu-wrap
+document.querySelector(".menu-wrap .close")?.addEventListener("click", function() {
+  const menu = document.querySelector(".menu-wrap");
+  const html = document.documentElement;
+  const body = document.body;
+
+  menu?.classList.remove("open");
+  html.classList.remove("overflow");
+  body.classList.remove("overflow");
+});
