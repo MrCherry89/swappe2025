@@ -276,3 +276,19 @@ document.querySelector(".menu-wrap .close")?.addEventListener("click", function(
   html.classList.remove("overflow");
   body.classList.remove("overflow");
 });
+
+const swiper22 = new Swiper('.collaborations-slider', {
+  loop: true,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+
+  speed: 800
+});
